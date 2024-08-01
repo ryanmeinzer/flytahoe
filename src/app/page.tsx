@@ -20,9 +20,9 @@ export default function Home() {
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
           FlyTahoe
         </Typography>
-        <Link href="/about" color="secondary" component={NextLink}>
+        {/* <Link href="/about" color="secondary" component={NextLink}>
           Register
-        </Link>
+        </Link> */}
       </Box>
     </Container>
   );
