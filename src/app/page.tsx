@@ -22,7 +22,7 @@ export default function Home() {
           FlyTahoe
         </Typography>
         <Typography variant="h6" sx={{ mb: 4, color: 'grey.500' }}>
-          N ↔ S Lake Tahoe Transportation Service
+          N ↔ S Lake Tahoe E-Foil Boat Service
         </Typography>
         <Grid container spacing={4} justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={4}>
