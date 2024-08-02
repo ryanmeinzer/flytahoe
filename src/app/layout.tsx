@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   keywords: ['eco-friendly travel', 'electric hydrofoil', 'Lake Tahoe transportation', 'sustainable travel', 'quiet boat ride', 'fast lake crossing', 'hovercraft boat', 'Tahoe blue preservation', 'zero emissions transport', 'prelaunch discount', 'travel voucher', 'referral discounts', 'lake eco-tourism', 'climate-friendly travel', 'smooth water travel'],
   creator: 'Ryan Meinzer',
   description: 'N ↔ S Lake Tahoe E-Foil Boat Transit',
-  // openGraph: {
-  //   images: [{
-  //     url: "/share-image.png",
-  //   }],
-  // },
+  openGraph: {
+    images: [{
+      url: "/share-image.png",
+    }],
+  },
   icons: {
     icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 100 100"><text y=".90em" font-size="90">🛥</text></svg>',
     shortcut: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 0 100 100"><text y=".90em" font-size="90">🛥</text></svg>',
