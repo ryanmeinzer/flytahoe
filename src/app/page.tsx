@@ -1,7 +1,9 @@
 import * as React from 'react';
-import { Container, Box, Grid, Typography, Paper, Divider } from '@mui/material';
+import { Container, Box, Grid, Typography, Paper, Divider, Icon } from '@mui/material';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import EventBusyIcon from '@mui/icons-material/EventBusy';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'; 
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'; 
 
 export default function Home() {
   return (
@@ -14,8 +16,11 @@ export default function Home() {
         height="100vh"
         textAlign="center"
       >
-        <Typography variant="h2" sx={{ mb: 6, fontWeight: 'bold' }}>
+        <Typography variant="h2" sx={{ mb: 2, fontWeight: 'bold' }}>
           FlyTahoe
+        </Typography>
+        <Typography variant="h6" sx={{ mb: 4, color: 'grey.500' }}>
+          N ↔ S Lake Tahoe Transportation Service
         </Typography>
         <Grid container spacing={4} justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={4}>
@@ -57,6 +62,23 @@ export default function Home() {
             </Paper>
           </Grid>
         </Grid>
+      </Box>
+      <Divider sx={{ mt: 2, mb: 4 }} />
+      <Box sx={{ p: 4, textAlign: 'left' }}>
+        <Typography variant="h5" gutterBottom>
+          <Icon component={ErrorOutlineIcon} sx={{ verticalAlign: 'middle', mr: 1, color: 'red' }} />
+          Problem
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          There's no North to South Lake Tahoe service covering the 20 miles; impractical due to fuel and noise pollution, seasickness, and inefficiency
+        </Typography>
+        <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
+          <Icon component={CheckCircleOutlineIcon} sx={{ verticalAlign: 'middle', mr: 1, color: 'green' }} />
+          Solution
+        </Typography>
+        <Typography variant="body1">
+          Electric hydrofoil speed boat; supports 'Keep Tahoe Blue', quiet, stable, fast, efficient, and profitable
+        </Typography>
       </Box>
     </Container>
   );
