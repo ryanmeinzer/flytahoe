@@ -13,8 +13,11 @@ export default function Home() {
           height="100vh"
           textAlign="center"
         >
-          <Typography variant="h4" component="h1" sx={{ mb: 6 }}>
+          <Typography variant="h4" sx={{ mb: 4 }}>
             FlyTahoe
+          </Typography>
+          <Typography variant="body1">
+            coming soon
           </Typography>
         </Box>
       </Container>
