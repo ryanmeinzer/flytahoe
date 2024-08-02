@@ -4,6 +4,7 @@ import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import EventBusyIcon from '@mui/icons-material/EventBusy';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'; 
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'; 
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export default function Home() {
   return (
@@ -62,6 +63,18 @@ export default function Home() {
             </Paper>
           </Grid>
         </Grid>
+        <Box sx={{
+          position: 'absolute',
+          bottom: 20,
+          animation: 'bounce 2s infinite',
+          '@keyframes bounce': {
+            '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
+            '40%': { transform: 'translateY(-10px)' },
+            '60%': { transform: 'translateY(-5px)' },
+          }
+        }}>
+          <KeyboardArrowDownIcon sx={{ fontSize: 40, color: 'white' }} />
+        </Box>
       </Box>
       <Divider sx={{ mt: 2, mb: 4 }} />
       <Box sx={{ p: 4, textAlign: 'left' }}>
