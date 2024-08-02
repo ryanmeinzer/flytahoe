@@ -16,6 +16,7 @@ export default function Home() {
         justifyContent="center"
         height="100vh"
         textAlign="center"
+        sx={{ position: 'relative' }} // Ensure relative positioning for absolute children
       >
         <Typography variant="h2" sx={{ mb: 2, fontWeight: 'bold' }}>
           FlyTahoe
@@ -65,7 +66,7 @@ export default function Home() {
         </Grid>
         <Box sx={{
           position: 'absolute',
-          bottom: 20,
+          bottom: { xs: 10, sm: 20 }, // Adjust position based on screen size
           animation: 'bounce 2s infinite',
           '@keyframes bounce': {
             '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
@@ -73,10 +74,10 @@ export default function Home() {
             '60%': { transform: 'translateY(-5px)' },
           }
         }}>
-          <KeyboardArrowDownIcon sx={{ fontSize: 40, color: 'white' }} />
+          <KeyboardArrowDownIcon sx={{ fontSize: { xs: 30, sm: 40 }, color: 'white' }} />
         </Box>
       </Box>
-      <Divider sx={{ mt: 2, mb: 4 }} />
+      <Divider sx={{ mt: 2, mb: { xs: 2, sm: 4 } }} />
       <Box sx={{ p: 4, textAlign: 'left' }}>
         <Typography variant="h5" gutterBottom>
           <Icon component={ErrorOutlineIcon} sx={{ verticalAlign: 'middle', mr: 1, color: 'red' }} />
