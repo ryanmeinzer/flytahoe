@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   keywords: ['eco-friendly travel', 'electric hydrofoil', 'Lake Tahoe transportation', 'sustainable travel', 'quiet boat ride', 'fast lake crossing', 'hovercraft boat', 'Tahoe blue preservation', 'zero emissions transport', 'prelaunch discount', 'travel voucher', 'referral discounts', 'lake eco-tourism', 'climate-friendly travel', 'smooth water travel'],
   creator: 'Ryan Meinzer',
-  description: 'N ↔ S Lake Tahoe E-Foil Boat Service',
+  description: 'N ↔ S Lake Tahoe E-Foil Boat Transit',
   // openGraph: {
   //   images: [{
   //     url: "/share-image.png",
