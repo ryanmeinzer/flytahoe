@@ -16,7 +16,7 @@ export default function Home() {
         justifyContent="center"
         height={{ xs: 'auto', sm: '100vh' }}
         textAlign="center"
-        sx={{ pt: { xs: 6, sm: 0 } }}  // Increased padding top for mobile
+        sx={{ pt: { xs: 4, sm: 0 } }}  // Increased padding top for mobile
       >
         <Typography variant="h2" sx={{ mb: { xs: 4, sm: 2 }, fontWeight: 'bold', mt: { xs: 4, sm: 0 } }}>
           FlyTahoe
