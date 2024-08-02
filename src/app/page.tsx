@@ -14,11 +14,11 @@ export default function Home() {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        height="100vh"
+        height={{ xs: 'auto', sm: '100vh' }}
         textAlign="center"
-        sx={{ position: 'relative' }} // Ensure relative positioning for absolute children
+        sx={{ pt: { xs: 6, sm: 0 } }}  // Increased padding top for mobile
       >
-        <Typography variant="h2" sx={{ mb: 2, fontWeight: 'bold' }}>
+        <Typography variant="h2" sx={{ mb: { xs: 4, sm: 2 }, fontWeight: 'bold', mt: { xs: 4, sm: 0 } }}>
           FlyTahoe
         </Typography>
         <Typography variant="h6" sx={{ mb: 4, color: 'grey.500' }}>
@@ -53,7 +53,15 @@ export default function Home() {
           </Grid>
 
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{ p: 2, opacity: 0.5, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
+            <Paper variant="outlined" sx={{
+              p: 2, 
+              opacity: 0.5, 
+              display: 'flex', 
+              flexDirection: 'column', 
+              justifyContent: 'center', 
+              height: '100%',
+              mb: { xs: 4, sm: 0 }  // Added bottom margin for mobile to match top spacing
+            }}>
               <Typography variant="h5" gutterBottom>
                 Standard Ticket <EventBusyIcon color="disabled" />
               </Typography>
@@ -66,19 +74,20 @@ export default function Home() {
         </Grid>
         <Box sx={{
           position: 'absolute',
-          bottom: { xs: 10, sm: 20 }, // Adjust position based on screen size
+          bottom: { xs: '10%', sm: 20 },
           animation: 'bounce 2s infinite',
           '@keyframes bounce': {
             '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
             '40%': { transform: 'translateY(-10px)' },
             '60%': { transform: 'translateY(-5px)' },
-          }
+          },
+          display: { xs: 'none', sm: 'block' }  // Hide on xs screens
         }}>
           <KeyboardArrowDownIcon sx={{ fontSize: { xs: 30, sm: 40 }, color: 'white' }} />
         </Box>
       </Box>
-      <Divider sx={{ mt: 2, mb: { xs: 2, sm: 4 } }} />
-      <Box sx={{ p: 4, textAlign: 'left' }}>
+      <Divider sx={{ mt: 2, mb: { xs: 4, sm: 4 } }} />
+      <Box sx={{ p: { xs: 2, sm: 4 }, textAlign: 'left' }}>
         <Typography variant="h5" gutterBottom>
           <Icon component={ErrorOutlineIcon} sx={{ verticalAlign: 'middle', mr: 1, color: 'red' }} />
           Problem
