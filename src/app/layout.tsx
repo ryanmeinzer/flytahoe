@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from '@/theme';
 import { Metadata } from 'next'
 import type { Viewport } from 'next'
-import Head from 'next/head';
+import Script from 'next/script'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   keywords: ['eco-friendly travel', 'electric hydrofoil', 'Lake Tahoe transportation', 'sustainable travel', 'quiet boat ride', 'fast lake crossing', 'hovercraft boat', 'Tahoe blue preservation', 'zero emissions transport', 'prelaunch discount', 'travel voucher', 'referral discounts', 'lake eco-tourism', 'climate-friendly travel', 'smooth water travel'],
   creator: 'Ryan Meinzer',
   description: 'FlyTahoe',
-  openGraph: {
-    images: [{
-      url: "/share-image.png",
-    }],
-  },
+  // openGraph: {
+  //   images: [{
+  //     url: "/share-image.png",
+  //   }],
+  // },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
@@ -35,9 +35,8 @@ export const metadata: Metadata = {
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <Head>
-        <script src="https://getlaunchlist.com/js/widget.js" defer></script>
-      </Head>
+      <Script src="https://getlaunchlist.com/js/widget.js" defer/>
+      {/* <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script> */}
       <body>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ThemeProvider theme={theme}>

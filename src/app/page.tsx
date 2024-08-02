@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { Box, Typography, Button, Container, Grid } from '@mui/material';
+import { Box, TextField, Typography, Button, Container, Grid } from '@mui/material';
 
 export default function Home() {
   return (
+    <>
       <Container>
         <Box
           display="flex"
@@ -12,6 +13,9 @@ export default function Home() {
           height="100vh"
           textAlign="center"
         >
+          <Typography variant="h4" component="h1" sx={{ mb: 6 }}>
+            FlyTahoe
+          </Typography>
           <Grid container spacing={4} justifyContent="center">
             <Grid item>
               <Typography variant="h4" gutterBottom>
@@ -40,19 +44,11 @@ export default function Home() {
               </Typography>
             </Grid>
           </Grid>
-  
-          <Box mt={4}>
-            {/* <Button variant="contained" color="primary" size="large">
-              Claim Discount
-            </Button> */}
-          </Box>
-
-          <Box className="launchlist-widget" data-key-id="0TxzcS" data-height="180px" mt={4}></Box>
-          
-          <Typography variant="body2" sx={{ mt: 2 }}>
-            *no payment required
-          </Typography>
+          <Container>
+            <Box className="launchlist-widget" data-key-id="0TxzcS" data-height="180px" mt={4}></Box>
+          </Container>
         </Box>
       </Container>
+    </>
   );
 }
