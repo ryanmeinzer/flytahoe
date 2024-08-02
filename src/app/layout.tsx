@@ -35,8 +35,8 @@ export const metadata: Metadata = {
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <Script src="https://getlaunchlist.com/js/widget.js" defer/>
-      {/* <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script> */}
+      <Script src="https://getlaunchlist.com/js/popup.js" defer/>
+      {/* <Script src="https://getlaunchlist.com/js/widget.js" defer/> */}
       <body>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ThemeProvider theme={theme}>

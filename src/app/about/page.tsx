@@ -1,35 +1,54 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import NextLink from 'next/link';
-import ProTip from '@/components/ProTip';
-import Copyright from '@/components/Copyright';
+import { Box, TextField, Typography, Button, Container, Grid } from '@mui/material';
 
-export default function About() {
+export default function Home() {
   return (
-    <Container maxWidth="lg">
-      <Box
-        sx={{
-          my: 4,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI - Next.js example in TypeScript
-        </Typography>
-        <Box sx={{ maxWidth: 'sm' }}>
-          <Button variant="contained" component={NextLink} href="/">
-            Go to the home page
-          </Button>
+    <>
+      <Container>
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          height="100vh"
+          textAlign="center"
+        >
+          <Typography variant="h4" component="h1" sx={{ mb: 6 }}>
+            FlyTahoe
+          </Typography>
+          <Grid container spacing={4} justifyContent="center">
+            <Grid item>
+              <Typography variant="h4" gutterBottom>
+                Early Discount
+              </Typography>
+              <Typography variant="h6" gutterBottom>
+                Early 2024 | 50% Off
+              </Typography>
+            </Grid>
+  
+            <Grid item>
+              <Typography variant="h4" gutterBottom>
+                Advance Discount
+              </Typography>
+              <Typography variant="h6" gutterBottom>
+                Now | 25% Off
+              </Typography>
+            </Grid>
+  
+            <Grid item>
+              <Typography variant="h4" gutterBottom>
+                Standard Ticket
+              </Typography>
+              <Typography variant="h6" gutterBottom>
+                2025 | Full Price
+              </Typography>
+            </Grid>
+          </Grid>
+          <Container>
+            <Box className="launchlist-widget" data-key-id="0TxzcS" data-height="180px" mt={4}></Box>
+          </Container>
         </Box>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
+      </Container>
+    </>
   );
 }
