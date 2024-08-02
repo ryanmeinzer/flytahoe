@@ -44,7 +44,8 @@ export default function Home() {
           </Grid>
         </Grid>
         <Container>
-          <Box className="launchlist-widget" data-key-id="0TxzcS" data-height="180px"></Box>          </Container>
+          <Box className="launchlist-widget" data-key-id="0TxzcS" data-height="180px"></Box>
+        </Container>
       </Box>
     </Container>
   );
