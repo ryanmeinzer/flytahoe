@@ -18,7 +18,7 @@ export default function Home() {
         justifyContent="center"
         height={{ xs: 'auto', sm: '100vh' }}
         textAlign="center"
-        sx={{ pt: { xs: 2, sm: 0 } }}  // Increased padding top for mobile
+        sx={{ pt: { xs: 2, sm: 0 } }}
       >
         <Typography variant="h2" sx={{ mb: { xs: 4, sm: 2 }, fontWeight: 'bold', mt: { xs: 4, sm: 0 } }}>
           FlyTahoe
@@ -28,7 +28,7 @@ export default function Home() {
         </Typography>
         <Grid container spacing={4} justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{ p: 2, my: 6, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
+            <Paper variant="outlined" sx={{ p: 2, my: { xs: 2, sm: 6 }, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
               <Typography variant="h5" gutterBottom>
                 Early Discount <EventBusyIcon color="disabled" />
               </Typography>
@@ -39,7 +39,7 @@ export default function Home() {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{ p: 2, my: 6, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+            <Paper variant="outlined" sx={{ p: 2, my: { xs: 2, sm: 6 }, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
               <Box>
                 <Typography variant="h5" gutterBottom>
                   Advance Discount <EventAvailableIcon color="action" />
@@ -49,12 +49,11 @@ export default function Home() {
                   Now | 25% Off
                 </Typography>
                 <Box className="launchlist-widget" data-key-id="0TxzcS" data-height="150px" />
-                {/* <LaunchListForm /> */}
               </Box>
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{ p: 2, my: 6, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
+            <Paper variant="outlined" sx={{ p: 2, my: { xs: 2, sm: 6 }, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
               <Typography variant="h5" gutterBottom>
                 Standard Ticket <EventBusyIcon color="disabled" />
               </Typography>
@@ -75,7 +74,7 @@ export default function Home() {
             '40%': { transform: 'translateY(-10px)' },
             '60%': { transform: 'translateY(-5px)' },
           },
-          display: { xs: 'none', sm: 'block' }  // Hide on xs screens
+          display: { xs: 'none', sm: 'block' }
         }}>
           <KeyboardArrowDownIcon sx={{ fontSize: { xs: 30, sm: 40 }, color: 'white' }} />
         </Box>
