@@ -6,6 +6,7 @@ import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'; 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LaunchListForm from '@/components/LaunchListForm';
+import MainForm from '@/components/MainForm';
 import FeatureGrid from '@/components/FeatureGrid';
 
 export default function Home() {
@@ -49,6 +50,7 @@ export default function Home() {
                   Now | 25% Off
                 </Typography>
                 <Box className="launchlist-widget" data-key-id="0TxzcS" data-height="150px" />
+                {/* <MainForm /> */}
               </Box>
             </Paper>
           </Grid>

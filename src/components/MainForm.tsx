@@ -33,16 +33,13 @@ const MainForm = () => {
     await fetch('/api/snowboard/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ serial_number: parseInt(serial), make, model, size: parseInt(size), email }),
+      body: JSON.stringify({ email }),
     });
   };
 
   return (
     <Container maxWidth="sm">
       <Box sx={{ my: 4, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <Typography variant="h4" gutterBottom>
-          Snowboard Registry
-        </Typography>
         <TextField
           fullWidth
           label="Email"
@@ -66,11 +63,6 @@ const MainForm = () => {
               <Button variant="contained" onClick={handleRegister} disabled={isButtonDisabled}>
                 Register
               </Button>
-            </Grid>
-            <Grid item>
-              <Typography>
-                or
-              </Typography>
             </Grid>
           </Grid>
         </Box>
