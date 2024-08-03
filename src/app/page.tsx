@@ -5,6 +5,8 @@ import EventBusyIcon from '@mui/icons-material/EventBusy';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'; 
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'; 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import LaunchListForm from '@/components/LaunchListForm';
+import FeatureGrid from '@/components/FeatureGrid';
 
 export default function Home() {
   return (
@@ -26,7 +28,7 @@ export default function Home() {
         </Typography>
         <Grid container spacing={4} justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{ p: 2, opacity: 0.5, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
+            <Paper variant="outlined" sx={{ p: 2, my: 6, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
               <Typography variant="h5" gutterBottom>
                 Early Discount <EventBusyIcon color="disabled" />
               </Typography>
@@ -36,9 +38,8 @@ export default function Home() {
               </Typography>
             </Paper>
           </Grid>
-
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{ p: 2, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+            <Paper variant="outlined" sx={{ p: 2, my: 6, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
               <Box>
                 <Typography variant="h5" gutterBottom>
                   Advance Discount <EventAvailableIcon color="action" />
@@ -47,21 +48,13 @@ export default function Home() {
                 <Typography variant="h6" gutterBottom>
                   Now | 25% Off
                 </Typography>
+                <Box className="launchlist-widget" data-key-id="0TxzcS" data-height="150px" />
+                {/* <LaunchListForm /> */}
               </Box>
-              <Box className="launchlist-widget" data-key-id="0TxzcS" data-height="150px" />
             </Paper>
           </Grid>
-
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{
-              p: 2, 
-              opacity: 0.5, 
-              display: 'flex', 
-              flexDirection: 'column', 
-              justifyContent: 'center', 
-              height: '100%',
-              mb: { xs: 4, sm: 0 }  // Added bottom margin for mobile to match top spacing
-            }}>
+            <Paper variant="outlined" sx={{ p: 2, my: 6, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
               <Typography variant="h5" gutterBottom>
                 Standard Ticket <EventBusyIcon color="disabled" />
               </Typography>
@@ -72,6 +65,7 @@ export default function Home() {
             </Paper>
           </Grid>
         </Grid>
+        <FeatureGrid />
         <Box sx={{
           position: 'absolute',
           bottom: { xs: '10%', sm: 20 },
