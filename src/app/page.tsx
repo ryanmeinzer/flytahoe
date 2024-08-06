@@ -17,9 +17,9 @@ export default function Home() {
         justifyContent="center"
         height={{ xs: 'auto', sm: '100vh' }}
         textAlign="center"
-        sx={{ pt: { xs: 2, sm: 0 } }}
+        sx={{ pt: { xs: 2, sm: 2 } }}
       >
-        <Typography variant="h2" sx={{ mb: { xs: 4, sm: 2 }, fontWeight: 'bold', mt: { xs: 4, sm: 0 } }}>
+        <Typography variant="h2" sx={{ mb: { xs: 4, sm: 2 }, fontWeight: 'bold', mt: { xs: 4, sm: 2 } }}>
           FlyTahoe
         </Typography>
         <Typography variant="h6" sx={{ mb: 4, color: 'grey.500' }}>
