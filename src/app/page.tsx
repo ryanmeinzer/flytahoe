@@ -65,7 +65,7 @@ export default function Home() {
           </Grid>
         </Grid>
         <FeatureGrid />
-        <Box sx={{
+        {/* <Box sx={{
           position: 'absolute',
           bottom: { xs: '10%', sm: 20 },
           animation: 'bounce 2s infinite',
@@ -77,9 +77,9 @@ export default function Home() {
           display: { xs: 'none', sm: 'block' }
         }}>
           <KeyboardArrowDownIcon sx={{ fontSize: { xs: 30, sm: 40 }, color: 'white' }} />
-        </Box>
+        </Box> */}
       </Box>
-      <Divider sx={{ mt: 2, mb: { xs: 4, sm: 4 } }} />
+      {/* <Divider sx={{ mt: 2, mb: { xs: 4, sm: 4 } }} />
       <Box sx={{ p: { xs: 2, sm: 4 }, textAlign: 'left' }}>
         <Typography variant="h5" gutterBottom>
           <Icon component={ErrorOutlineIcon} sx={{ verticalAlign: 'middle', mr: 1, color: 'red' }} />
@@ -95,7 +95,7 @@ export default function Home() {
         <Typography variant="body1">
           Electric hydrofoil speed boat; supports 'Keep Tahoe Blue', quiet, stable, fast, efficient, and profitable
         </Typography>
-      </Box>
+      </Box> */}
     </Container>
   );
 }
