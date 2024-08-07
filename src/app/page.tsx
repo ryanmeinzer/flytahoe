@@ -1,11 +1,9 @@
 import * as React from 'react';
-import { Container, Box, Grid, Typography, Paper, Divider, Icon } from '@mui/material';
+import { Container, Box, Grid, Typography, Paper, Divider } from '@mui/material';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import EventBusyIcon from '@mui/icons-material/EventBusy';
 import LaunchListForm from '@/components/LaunchListForm';
 import FeatureGrid from '@/components/FeatureGrid';
-import DownArrow from '@/components/DownArrow';
-import ProblemSolution from '@/components/ProblemSolution';
 
 export default function Home() {
   return (
@@ -15,9 +13,12 @@ export default function Home() {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        height={{ xs: 'auto', sm: '100vh' }}
+        minHeight="100vh"
         textAlign="center"
-        sx={{ pt: { xs: 2, sm: 2 } }}
+        sx={{
+          pt: { xs: 2, sm: 2 },
+          width: '100%',
+        }}
       >
         <Typography variant="h2" sx={{ mb: { xs: 4, sm: 2 }, fontWeight: 'bold', mt: { xs: 4, sm: 2 } }}>
           FlyTahoe
