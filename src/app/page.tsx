@@ -28,7 +28,7 @@ export default function Home() {
         </Typography>
         <Grid container spacing={4} justifyContent="center" alignItems="center">
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{ p: 2, opacity: 0.5, my: { xs: 2, sm: 6 }, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
+            <Paper variant="outlined" sx={{ p: 2, opacity: 0.5, my: { xs: .5, sm: 6 }, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
               <Typography variant="h5" gutterBottom>
                 Early Discount <EventBusyIcon color="disabled" />
               </Typography>
@@ -39,7 +39,7 @@ export default function Home() {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{ p: 2, my: { xs: 2, sm: 6 }, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
+            <Paper variant="outlined" sx={{ p: 2, my: { xs: .5, sm: 6 }, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
               <Box>
                 <Typography variant="h5" gutterBottom>
                   Advance Discount <EventAvailableIcon color="action" />
@@ -53,7 +53,7 @@ export default function Home() {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper variant="outlined" sx={{ p: 2, opacity: 0.5, my: { xs: 2, sm: 6 }, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
+            <Paper variant="outlined" sx={{ p: 2, opacity: 0.5, my: { xs: .5, sm: 6 }, display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
               <Typography variant="h5" gutterBottom>
                 Standard Ticket <EventBusyIcon color="disabled" />
               </Typography>

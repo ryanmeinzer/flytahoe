@@ -66,7 +66,7 @@ const LaunchListForm: React.FC = () => {
   return (
     <>
       <Container maxWidth="sm">
-        <Box component="form" className="launchlist-form-popup" onSubmit={handleSubmit} sx={{ my: 4, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Box component="form" className="launchlist-form-popup" onSubmit={handleSubmit} sx={{ my: { xs: 3, sm: 4 }, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <TextField
             focused
             fullWidth
