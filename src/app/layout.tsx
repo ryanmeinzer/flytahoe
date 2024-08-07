@@ -6,6 +6,7 @@ import theme from '@/theme';
 import { Metadata } from 'next'
 import type { Viewport } from 'next'
 import Script from 'next/script'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -44,6 +45,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
             <CssBaseline />
             {props.children}
+            <GoogleAnalytics gaId="G-Q09T9QB4FC" />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
