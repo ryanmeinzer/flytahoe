@@ -1,11 +1,17 @@
+"use client"
+
 import * as React from 'react';
 import { Container, Box, Grid, Typography, Paper, Divider } from '@mui/material';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import EventBusyIcon from '@mui/icons-material/EventBusy';
 import LaunchListForm from '@/components/LaunchListForm';
 import FeatureGrid from '@/components/FeatureGrid';
+import { useSearchParams } from 'next/navigation';
 
 export default function Home() {
+  const searchParams = useSearchParams();
+  const referralCode = searchParams.get('ref') || '';
+
   return (
     <Container>
       <Box
@@ -48,7 +54,7 @@ export default function Home() {
                 <Typography variant="h6" gutterBottom>
                   Now | 25% Off
                 </Typography>
-                <LaunchListForm />
+                <LaunchListForm referralCode={referralCode} />
               </Box>
             </Paper>
           </Grid>

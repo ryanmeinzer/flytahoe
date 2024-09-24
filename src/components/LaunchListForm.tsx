@@ -6,7 +6,14 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
-const LaunchListForm: React.FC = () => {
+interface LaunchListFormProps {
+  referralCode?: string | string[];
+}
+
+const LaunchListForm: React.FC<LaunchListFormProps> = ({ referralCode }) => {
+
+  console.log('referralCode:', referralCode)
+
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
   const [iframeSrc, setIframeSrc] = useState('');
@@ -35,7 +42,7 @@ const LaunchListForm: React.FC = () => {
     const formData = new FormData();
     formData.append('email', email);
 
-    const actionURL = 'https://getlaunchlist.com/s/0TxzcS';
+    const actionURL = `https://getlaunchlist.com/s/0TxzcS/?ref=${referralCode}`;
 
     fetch(actionURL, {
       method: 'POST',
